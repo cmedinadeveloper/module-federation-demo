@@ -9,7 +9,8 @@ export default defineConfig({
     federation({
       name: "host_app",
       remotes: {
-        remote_app: "http://localhost:5001/assets/remoteEntry.js",
+        remote_app:
+          "https://carlos-medina-75-remote-module-federation-demo-cm-822122cfc-ze.zephyrcloud.app/assets/remoteEntry.js",
       },
       shared: ["react", "react-dom"],
     }),
