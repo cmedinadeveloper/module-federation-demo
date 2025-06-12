@@ -1,0 +1,15 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    // ... other options ...
+    "typeRoots": ["./node_modules/@types", "./src/@types"],
+    "paths": {
+      "remote_app/*": ["./src/@types/remote-app.d.ts"]
+    }
+  },
+  "include": ["src", "src/@types"]
+}
